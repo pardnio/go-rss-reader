@@ -3,6 +3,9 @@
 > [!NOTE]
 > 此 README 由 [SKILL](https://github.com/agenvoy/skill-readme-generate) 生成，英文版請參閱 [這裡](../README.md)。
 
+> [!WARNING]
+> **已於 2026-10-30 封存。** go-rss-reader 不再維護，最終版本為 `v0.2.0`；原始碼與 `go build -o RSSReader ./cmd/cli` 建置方式仍可使用，但不再發布新功能、錯誤修正或安全性更新，也不再受理 issue 與 pull request。
+
 ***
 
 <p align="center">

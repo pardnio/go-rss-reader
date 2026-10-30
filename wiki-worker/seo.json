@@ -1,0 +1,101 @@
+{
+  "home_title": {
+    "en": "Terminal RSS Reader with AI News Summary | go-rss-reader",
+    "zh": "終端機 RSS 閱讀器｜go-rss-reader"
+  },
+  "descriptions": {
+    "en": {
+      "home": "go-rss-reader by Pardn Chiu is a terminal RSS reader in Go with full-article extraction, SQLite offline cache, and a rolling AI news summary via OpenAI.",
+      "getting-started": "Build go-rss-reader from source with CGO, add your first RSS feed, read full articles in the terminal, and enable the LLM digest.",
+      "architecture": "Layer overview of go-rss-reader: TUI app, RSS collector, content extractor, OpenAI client, and SQLite storage, plus cross-cutting rules.",
+      "refresh-cycle": "How one update check runs: launch, Ctrl+R, and the 5-minute ticker, new-article detection, background extraction, then the digest.",
+      "feed-collection": "How Collector manages feeds and parses RSS 2.0: deduplication by link, the 72-hour window, HTML cleanup, and pubDate formats.",
+      "content-extraction": "How Extractor pulls title, author, and body from news pages with goquery: noise removal, link-density body selection, and word count.",
+      "llm-digest": "When the AI news summary in the Summary pane runs, what gets sent to gpt-4o-mini, the Traditional Chinese output sections, and the streaming client.",
+      "storage": "SQLite schema of go-rss-reader: the news, feeds, and data tables, their indexes, and every database.SQLite access method.",
+      "configuration": "Configure go-rss-reader: RSS_DB_PATH and GO_ENV, database file resolution order, the stored OpenAI API key, and fixed parameters.",
+      "cli-reference": "go-rss-reader hotkeys, in-app commands (add, rm, apikey, config), pane layout, and status bar messages."
+    },
+    "zh": {
+      "home": "邱敬幃開發的 Go 終端機 RSS 閱讀器（RSS reader），具備閱讀模式全文萃取、SQLite 離線快取與 OpenAI 滾動式 AI 新聞摘要。",
+      "getting-started": "以 CGO 從原始碼建置 go-rss-reader、加入第一個 RSS 訂閱源、在終端讀全文並啟用 LLM 概要。",
+      "architecture": "go-rss-reader 分層概覽：TUI 應用層、RSS 收集器、全文萃取器、OpenAI 用戶端與 SQLite 儲存及跨切原則。",
+      "refresh-cycle": "一次檢查更新的完整順序：啟動、Ctrl+R 與 5 分鐘自動檢查、新文章判定、背景全文萃取到產生概要。",
+      "feed-collection": "Collector 如何管理訂閱源並解析 RSS 2.0：依連結去重、72 小時時間窗、HTML 清理與 pubDate 格式。",
+      "content-extraction": "Extractor 如何以 goquery 從新聞網頁取出標題、作者與正文：雜訊移除、連結密度判定正文與字數計算。",
+      "llm-digest": "Summary 欄 AI 新聞摘要的觸發條件、送交 gpt-4o-mini 的內容、繁體中文輸出段落與串流 API 用戶端。",
+      "storage": "go-rss-reader 的 SQLite 結構：news、feeds、data 三張資料表、索引與 database.SQLite 所有存取方法。",
+      "configuration": "go-rss-reader 設定：RSS_DB_PATH 與 GO_ENV、資料庫檔案位置判斷順序、儲存的 OpenAI 金鑰與固定參數。",
+      "cli-reference": "go-rss-reader 快捷鍵、介面內指令（add、rm、apikey、config）、介面區塊配置與狀態列訊息。"
+    }
+  },
+  "keywords": {
+    "en": {
+      "home": "rss reader, terminal rss reader, ai news summary, news digest, tui rss reader, go rss reader, full article in terminal",
+      "getting-started": "install go-rss-reader, build terminal rss reader, cgo sqlite, add rss feed",
+      "architecture": "go-rss-reader architecture, tview tui, rss collector, content extractor, sqlite",
+      "refresh-cycle": "rss auto refresh, new article detection, background full text extraction",
+      "feed-collection": "rss feed parser, rss 2.0, pubDate parsing, feed deduplication",
+      "content-extraction": "full article extraction, reader mode, goquery, link density, word count",
+      "llm-digest": "ai news summary, news digest, rss reader with ai summary, gpt-4o-mini, openai streaming",
+      "storage": "sqlite schema, rss offline cache, go-sqlite3",
+      "configuration": "RSS_DB_PATH, GO_ENV, sqlite database path, openai api key",
+      "cli-reference": "tui hotkeys, rss reader commands, add rss feed, terminal rss reader keyboard"
+    },
+    "zh": {
+      "home": "RSS 閱讀器, rss reader, 終端機 RSS 閱讀器, AI 新聞摘要, 新聞摘要, Go RSS 閱讀器, 終端機全文閱讀",
+      "getting-started": "安裝 go-rss-reader, 建置 RSS 閱讀器, CGO SQLite, 新增 RSS 訂閱源",
+      "architecture": "go-rss-reader 架構, tview TUI, RSS 收集器, 全文萃取器, SQLite",
+      "refresh-cycle": "RSS 自動刷新, 新文章判定, 背景全文萃取",
+      "feed-collection": "RSS 解析, RSS 2.0, pubDate 解析, 訂閱源去重",
+      "content-extraction": "全文萃取, 閱讀模式, goquery, 連結密度, 字數計算",
+      "llm-digest": "AI 新聞摘要, 新聞摘要, gpt-4o-mini 新聞概要, OpenAI 串流",
+      "storage": "SQLite 資料表, RSS 離線快取, go-sqlite3",
+      "configuration": "RSS_DB_PATH, GO_ENV, SQLite 資料庫路徑, OpenAI API 金鑰",
+      "cli-reference": "TUI 快捷鍵, RSS 閱讀器指令, 新增訂閱源, 終端 RSS 閱讀器操作"
+    }
+  },
+  "brand_keywords": [
+    "邱敬幃",
+    "Pardn Chiu",
+    "pardnchiu",
+    "帕登國際有限公司",
+    "Pardn Co., Ltd"
+  ],
+  "person": {
+    "id": "https://pardn.io/#pardnchiu",
+    "name": "Pardn Chiu",
+    "alt_names": [
+      "邱敬幃",
+      "Chiu Ching-Wei",
+      "pardnchiu"
+    ],
+    "same_as": [
+      "https://pardn.io/",
+      "https://www.linkedin.com/in/pardnchiu",
+      "https://github.com/pardnchiu",
+      "https://dev.to/pardnchiu",
+      "https://x.com/pardnchiu"
+    ]
+  },
+  "organization": {
+    "id": "https://pardn.io/#organization",
+    "url": "https://pardn.io/",
+    "name": "Pardn Co., Ltd",
+    "name_zh": "帕登國際有限公司",
+    "same_as": [
+      "https://github.com/pardnio"
+    ]
+  },
+  "tagline": "Taiwan · Infrastructure Engineering",
+  "og_image": "https://pardn.io/logo.jpg",
+  "favicon": "/favicon.png",
+  "x_default": "",
+  "ai_usage": {
+    "train": "y",
+    "input": "y",
+    "search": "y"
+  },
+  "programming_language": "Go",
+  "license_url": "https://opensource.org/licenses/MIT"
+}
